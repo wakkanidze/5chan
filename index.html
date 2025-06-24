@@ -3,9 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <title>5chan // /b/ — Random</title>
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <style>
+        /* === Глобальные стили === */
+body {
+    background: #f5f5ff;
+    color: #2c0059;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Темы */
+  body.purple {
+    background: #f5f5ff;
+    color: #2c0059;
+  }
+  body.dark {
+    background: #111;
+    color: #eee;
+  }
+  body.ch {
+    background: #fcf7e3;
+    color: #000;
+  }
+  
+  /* Шапка и подвал */
+  header, footer {
+    background: #8a2be2;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  /* Основной контейнер */
+  main {
+    padding: 1em;
+  }
+  
+  /* Блок треда */
+  .thread {
+    background: white;
+    border: 2px solid #8a2be2;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 8px;
+  }
+  
+  /* Пост внутри треда */
+  .post {
+    border-top: 1px dashed #ccc;
+    padding: 0.5em 0;
+  }
+  
+  /* Ввод текста и заголовков */
+  textarea,
+  input[type="text"] {
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: 1px solid #8a2be2;
+    border-radius: 4px;
+    background: #fafaff;
+    color: #2c0059;
+  }
+  
+  /* Кнопки */
+  button {
+    background: #8a2be2;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #6e22b0;
+  }
+  
+  /* Спойлеры */
+  .spoiler {
+    background-color: #2c0059;
+    color: #2c0059;
+    border-radius: 3px;
+    padding: 0 4px;
+    cursor: pointer;
+  }
+  .spoiler:hover {
+    color: white;
+  }
+    </style>
   <header><h1>5chan // /b/ — Random</h1></header>
   <main id="threads"></main>
   <section class="new-thread">
