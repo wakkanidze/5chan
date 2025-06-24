@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>5chan // /b/ — Random</title>
+  <link rel="stylesheet" href="C:\Users\User\Desktop\5chan\class.css" />
+</head>
+<body>
+  <header><h1>5chan // /b/ — Random</h1></header>
+  <main id="threads"></main>
+  <section class="new-thread">
+    <h2>Создать тред</h2>
+    <input type="text" id="thread-title" placeholder="Заголовок треда" />
+    <textarea id="thread-content" placeholder="Ваш пост"></textarea>
+    <input type="file" id="thread-image" />
+    <button onclick="createThread()">Создать</button>
+  </section>
+  <select id="theme-select" onchange="changeTheme(this.value)">
+    <option value="purple">Фиолетовая</option>
+    <option value="dark">Тёмная</option>
+    <option value="ch">Олд-двач</option>
+  </select>
+  
+  <footer><p>5chan © 2025. Анонимность — наша религия.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
